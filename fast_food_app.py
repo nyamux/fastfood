@@ -26,7 +26,7 @@ st.set_page_config(
 # Load and preprocess data
 @st.cache_data
 def load_data():
-    df = pd.read_csv('fastfoodus.csv')
+    df = pd.read_csv('https://github.com/nyamux/fastfood/blob/main/fastfoodus.csv')
     # Clean categories column - split into list if it's a string
     df['categories'] = df['categories'].str.split(' and ')
     return df
