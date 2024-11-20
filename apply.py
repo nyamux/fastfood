@@ -40,7 +40,7 @@ if df is not None:
     st.title("Fast Food Locations Data Visualization")
 
     # Add a placeholder for an image in the sidebar (you can replace 'ff.jpg' with an actual image URL)
-    st.sidebar.image('https://raw.githubusercontent.com/nyamux/fastfood/main/ff.jpg', caption='Fast Food Locations', use_container_width=True)
+    st.sidebar.image('https://raw.githubusercontent.com/nyamux/fastfood/main/ff.jpeg', caption='Fast Food Locations', use_container_width=True)
 
     # Dropdown menu for selecting a province
     selected_province = st.sidebar.selectbox("Select State", options=["All"] + sorted(df['province'].unique().tolist()))
